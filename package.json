@@ -1,8 +1,12 @@
 {
-  "name": "framer-test",
-  "version": "0.0.0",
-  "description": "",
+  "name": "framer-server",
+  "version": "0.0.1",
+  "description": "Local development environment for Framer.js prototypes",
   "main": "app.js",
+  "repository" :
+    { "type" : "git",
+      "url" : "https://github.com/jenbennings/framer-server"
+  },
   "dependencies": {
     "connect-livereload": "~0.3.2",
     "express": "~3.5.1",
@@ -11,10 +15,5 @@
     "gulp-livereload": "~1.2.0",
     "tiny-lr": "~0.0.5"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Ben Jennings",
-  "license": "ISC"
+  "author": "Ben Jennings"
 }
