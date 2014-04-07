@@ -1,0 +1,14 @@
+# Folder view configuration files
+.DS_Store
+
+# Framer output
+framer/
+images/
+index.html
+app.js
+
+# Node modules
+/node_modules
+
+# Sketch files
+*.sketch/

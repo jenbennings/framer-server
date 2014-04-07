@@ -1,0 +1,20 @@
+{
+  "name": "framer-test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "connect-livereload": "~0.3.2",
+    "express": "~3.5.1",
+    "gulp": "~3.6.0",
+    "gulp-embedlr": "~0.5.2",
+    "gulp-livereload": "~1.2.0",
+    "tiny-lr": "~0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Jennings",
+  "license": "ISC"
+}
