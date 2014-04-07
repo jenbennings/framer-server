@@ -13,7 +13,8 @@
     "gulp": "~3.6.0",
     "gulp-embedlr": "~0.5.2",
     "gulp-livereload": "~1.2.0",
-    "tiny-lr": "~0.0.5"
+    "tiny-lr": "~0.0.5",
+    "open": "~0.0.4"
   },
   "author": "Ben Jennings"
 }
