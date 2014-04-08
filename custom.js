@@ -788,3 +788,13 @@ if (typeof define !== 'undefined' && define.amd) {
 } else {
   window.FastClick = FastClick;
 }
+
+
+// --------------------------------------------------------------------------------
+// attach fastclick to the body tag
+// --------------------------------------------------------------------------------
+
+
+window.addEventListener('load', function() {
+    FastClick.attach(document.body);
+}, false);

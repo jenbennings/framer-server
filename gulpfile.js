@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var open = require('open');
 var EXPRESS_PORT = 4000;
-var EXPRESS_ROOT = __dirname;
+var EXPRESS_ROOT = ('./framer-test');
 var LIVERELOAD_PORT = 35729;
 
 function startExpress() {
