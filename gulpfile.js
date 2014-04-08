@@ -31,5 +31,5 @@ gulp.task('default', function () {
   startExpress();
   startLivereload();
   gulp.watch('*.js', notifyLivereload);
-  open('http://localhost:4000');
+  open('http://localhost:' + EXPRESS_PORT);
 });
