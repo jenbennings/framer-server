@@ -1,6 +1,6 @@
 # Framer.js Server
 #### A local development environment for Framer.js prototypes.
-This is a simple gulp.js build designed to help make developing Framer.js prototypes a bit easier.
+This is a simple node/gulp.js build designed to help make developing Framer.js prototypes a bit easier. So far this only works with [Sketch Framer](https://github.com/bomberstudios/sketch-framer) output.
 
 ## Features
 - Opens a new browser window pointed at `index.html` (localhost:4000 by default)
@@ -11,8 +11,7 @@ This is a simple gulp.js build designed to help make developing Framer.js protot
 ## Installation
 You'll need to have node & grunt.js installed ([this guide](http://travismaynard.com/writing/getting-started-with-gulp) is a good starting point).
 
-
-1. `cd` to the folder your Sketch file is located and clone the repo
+1. Clone this repo into the same folder as your Sketch Framer output
 2. `npm install` to grab the node dependencies
 3. Run the `gulp` command
 4. It's happening!
@@ -25,7 +24,7 @@ You'll need to have node & grunt.js installed ([this guide](http://travismaynard
 
 This sucks. Let's get rid of it.
 
-[FastClick](https://github.com/ftlabs/fastclick) comes bundled `custom.js`, along with a function that attaches it to the body of `index.html`
+[FastClick](https://github.com/ftlabs/fastclick) comes bundled in `custom.js`, along with a function that attaches it to the body of `index.html`
 
 To start using it, modify your `sketch-framer-config.js` (part of the [sketch-framer](https://github.com/bomberstudios/sketch-framer) plugin) to include a reference to `custom.js`.
 
@@ -45,3 +44,4 @@ Full Gist [here](https://gist.github.com/jenbennings/10083816).
 ## To do
 - ~~Add node-open~~
 - ~~Add fastclick~~
+- Refactor for [Framer](https://github.com/koenbok/Framer)
