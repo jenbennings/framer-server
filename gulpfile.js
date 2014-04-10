@@ -31,5 +31,6 @@ gulp.task('default', function () {
   startExpress();
   startLivereload();
   gulp.watch('*.js', notifyLivereload);
+  gulp.watch('images/*.png', notifyLivereload);
   open('http://localhost:' + EXPRESS_PORT);
 });
