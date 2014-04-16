@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var open = require('open');
 var EXPRESS_PORT = 4000;
 var EXPRESS_ROOT = __dirname;
 var LIVERELOAD_PORT = 35729;
@@ -32,5 +31,4 @@ gulp.task('default', function () {
   startLivereload();
   gulp.watch('*.js', notifyLivereload);
   gulp.watch('images/*.png', notifyLivereload);
-  open('http://localhost:' + EXPRESS_PORT);
 });
