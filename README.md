@@ -3,7 +3,7 @@
 This is a simple node/gulp.js build designed to help make developing Framer.js prototypes a bit easier. So far this only works with [Sketch Framer](https://github.com/bomberstudios/sketch-framer) output.
 
 ## Features
-- Opens a new browser window pointed at `index.html` (localhost:4000 by default)
+- ~~Opens a new browser window pointed at `index.html` (localhost:4000 by default)~~ I use LightTable now. 
 - `index.html` automatically refreshes whenever changes are saved to `app.js`
 - Prototypes are accessible to other devices on your local network (use `ifconfig` to get the IP)
   * These devices are also automatically refreshed when changes are made to `app.js`
