@@ -3,7 +3,6 @@
 This is a simple node/gulp.js build designed to help make developing Framer.js prototypes a bit easier. So far this only works with [Sketch Framer](https://github.com/bomberstudios/sketch-framer) output.
 
 ## Features
-- ~~Opens a new browser window pointed at `index.html` (localhost:4000 by default)~~ I use LightTable now. 
 - `index.html` automatically refreshes whenever changes are saved to `app.js`
 - Prototypes are accessible to other devices on your local network (use `ifconfig` to get the IP)
   * These devices are also automatically refreshed when changes are made to `app.js`
@@ -16,32 +15,4 @@ You'll need to have node & grunt.js installed ([this guide](http://travismaynard
 3. Run the `gulp` command
 4. It's happening!
 
-![](http://i.imgur.com/vv49C.gif) 
-
-### Bonus points: Add [FastClick](https://github.com/ftlabs/fastclick)
-
-> ...mobile browsers will wait approximately 300ms from the time that you tap the button to fire the click event. The reason for this is that the browser is waiting to see if you are actually performing a double tap.
-
-This sucks. Let's get rid of it.
-
-[FastClick](https://github.com/ftlabs/fastclick) comes bundled in `custom.js`, along with a function that attaches it to the body of `index.html`
-
-To start using it, modify your `sketch-framer-config.js` (part of the [sketch-framer](https://github.com/bomberstudios/sketch-framer) plugin) to include a reference to `custom.js`.
-
-```js
-var FramerLibraryUrl = "custom.js";
-var extra_script_line;
-var FramerLibraryFileName;
- 
-if(FramerLibraryUrl) {
-  FramerLibraryFileName = FramerLibraryUrl.replace(/^.*(\\|\/|\:)/, '');
-  extra_script_line = "\n\t\t<script src=\"" + FramerLibraryFileName + "\"></script>"
-}
-```
-
-Full Gist [here](https://gist.github.com/jenbennings/10083816).
-
-## To do
-- ~~Add node-open~~
-- ~~Add fastclick~~
-- Refactor for [Framer](https://github.com/koenbok/Framer)
+![](http://i.imgur.com/vv49C.gif)
